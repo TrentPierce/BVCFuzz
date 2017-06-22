@@ -37,9 +37,8 @@ class WalletThread(threading.Thread):
             value = float(balance.text.strip('BTC'))
 
             if value > 0:
-                with open('./wallets_balance', 'a') as wallets_file:
-                    wallets_file.write(
-                        balance.text + '; ' + self.url + "\n"
+               print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
+                )
                     )
 
         processes -= 1
