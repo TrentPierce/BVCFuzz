@@ -38,8 +38,8 @@ class WalletThread(threading.Thread):
 
             if value > 0:
                 print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
-                )
-                    )
+                
+                    
 
         processes -= 1
 
