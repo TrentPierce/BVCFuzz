@@ -37,7 +37,7 @@ class WalletThread(threading.Thread):
             value = float(balance.text.strip('BTC'))
 
             if value > 0:
-               print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
+                print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
                 )
                     )
 
