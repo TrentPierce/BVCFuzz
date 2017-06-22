@@ -91,10 +91,7 @@ while status != '404':
                     wallet_url = block.get('href')
                     wallet_key = block.text
 
-            with open('./wallets', 'a') as wallets_file:
-                wallets_file.write(
-                    str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
-                )
+            
 
             if wallet_url:
                 WalletThread(str(wallet_url)).start()
