@@ -46,12 +46,6 @@ class WalletThread(threading.Thread):
 
 page = 0
 
-try:
-    with open ('./page', 'r') as f:
-        page = int(f.read().strip())
-except IOError: pass
-except ValueError: pass
-
 
 url = 'http://directory.io/'
 status = None
@@ -60,7 +54,7 @@ processes = 0
 while status != '404':
     page += 1
 
-    sys.stdout.write("\rPage: %d, processes runned: %d" % (page, processes))
+    sys.stdout.write("\rPage: %d, processes run: %d" % (page, processes))
     sys.stdout.flush()
     
     req = requests.post(url + str(page))
