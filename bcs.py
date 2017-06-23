@@ -90,6 +90,3 @@ while status != '404':
 
             if wallet_url:
                 WalletThread(str(wallet_url)).start()
-
-        with open('./page', 'w') as f:
-            f.write(str(page))
