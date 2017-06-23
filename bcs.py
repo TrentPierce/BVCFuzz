@@ -35,8 +35,9 @@ class WalletThread(threading.Thread):
         if str(subreq.status_code) == '200':
             balance = BeautifulSoup(subreq.text).find('td', id = 'final_balance')
             value = float(balance.text.strip('BTC'))
+            print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
 
-            if value == 0:
+            if value > 0:
                 print str(wallet_key) + '; ' + str(wallet_rsa) + '; ' + str(wallet_url) + "\n"
                 
                     
