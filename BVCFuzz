@@ -7,6 +7,7 @@ import requests
 
 chars = 32
 accountEmpty = True
+count = 0
 
 d = 'abcdefghijklmnopqrstuvwxyz1234567890'
 word = ''
@@ -21,6 +22,8 @@ while accountEmpty:
      print("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
      accountEmpty = False
     else:
+     count += 1
+     print(count)
      print(word)
      print(data)
     word = ''
