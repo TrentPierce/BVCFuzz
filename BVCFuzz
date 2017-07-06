@@ -6,14 +6,12 @@ import json
 import requests
 
 chars = 32
-times = 1
 accountEmpty = True
 
 d = 'abcdefghijklmnopqrstuvwxyz1234567890'
 word = ''
 letter = ''
 while accountEmpty:
- while times > 0:
     for i in range(chars):
         letter = d[random.randint(0, len(d) -1)]
         word = word + letter
@@ -25,4 +23,3 @@ while accountEmpty:
     else:
      print(data)
     word = ''
-    times -= 1
