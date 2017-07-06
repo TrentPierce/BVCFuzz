@@ -23,5 +23,5 @@ while accountEmpty:
      accountEmpty = False
     else:
      count += 1
-     print(count, "\r")
+     print(count, \r)
     word = ''
