@@ -18,7 +18,7 @@ while times > 0:
         word = word + letter
     response = requests.get("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
     data = response.json()
-    json_obj = json.load(data)
-    print(json_obj)
+    for item in data["Results"]:
+     print item["Name"]    
     word = ''
     times -= 1
