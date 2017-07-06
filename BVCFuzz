@@ -21,5 +21,6 @@ while accountEmpty:
      print("https://bitcoinvideocasino.com/account/balance?account_key=" + word + " Balance: " + balance)
      accountEmpty = False
     else:
-     print(word + data)
+     print(word)
+     print(data)
     word = ''
