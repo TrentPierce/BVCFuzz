@@ -24,6 +24,4 @@ while accountEmpty:
     else:
      count += 1
      print(count)
-     print(word)
-     print(data)
     word = ''
