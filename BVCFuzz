@@ -18,7 +18,7 @@ while accountEmpty:
     response = requests.get("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
     data = response.json()
     if "message" in data:
-     print("https://bitcoinvideocasino.com/account/balance?account_key=" + word + " Balance: " + message)
+     print("https://bitcoinvideocasino.com/account/balance?account_key=" + word + " Balance: " + "message")
      accountEmpty = False
     else:
      print(word)
