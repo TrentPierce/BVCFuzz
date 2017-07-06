@@ -4,6 +4,7 @@
 import random
 import json
 import requests
+import os
 
 chars = 32
 accountEmpty = True
