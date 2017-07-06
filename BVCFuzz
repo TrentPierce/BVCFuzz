@@ -17,7 +17,7 @@ while times > 0:
         letter = d[random.randint(0, len(d) -1)]
         word = word + letter
     response = requests.get("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
-    data = response.json()
+    data = response.json_object()
     print(data[0])
     word = ''
     times -= 1
