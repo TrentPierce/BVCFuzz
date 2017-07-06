@@ -13,7 +13,7 @@ d = 'abcdefghijklmnopqrstuvwxyz1234567890'
 word = ''
 letter = ''
 while (accountEmpty):
-while times > 0:
+ while times > 0:
     for i in range(chars):
         letter = d[random.randint(0, len(d) -1)]
         word = word + letter
