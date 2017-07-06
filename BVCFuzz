@@ -20,5 +20,7 @@ while times > 0:
     data = response.json()
     if "balance" in data:
      print("balance")
+    else:
+     print(data)
     word = ''
     times -= 1
