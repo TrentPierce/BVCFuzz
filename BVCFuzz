@@ -25,5 +25,5 @@ while accountEmpty:
     else:
      count += 1
      sys.stdout.flush()
-     print(count)
+     sys.stdout.write(count)
     word = ''
