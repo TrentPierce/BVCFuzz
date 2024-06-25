@@ -1,0 +1,1 @@
+This repo was designed to generate a random hash value and append it to the base URL for Bitcoin Video Casino. The script then checks the URL for a balance in the attached bitcoin wallet. This repo is outdated and no longer being maintained.
